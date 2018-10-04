@@ -1,0 +1,45 @@
+aside#sidebar{
+    height:100%;
+    width:150px;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow-x: hidden;
+    z-index: 1;
+    background-image: linear-gradient(169deg, #2d496f, #016653);
+}
+
+#sidebar > .nav{
+    margin-top: 107px;
+}
+
+.nav li{
+    /* padding: 18px 0; */
+    
+}
+.nav li a{
+    display:block;
+    padding: 18px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav li a:active, .nav li a:hover, .nav li a:focus{
+    background-color: #6d8cb6;
+}
+
+.dropdown-menu .nav li a{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'OpenSans', sans-serif;
+}
+.nav .dropdown-menu{
+    background-color: #6d8cb6;
+    border-radius: 0;
+    margin: 0
+}

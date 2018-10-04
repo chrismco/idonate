@@ -1,0 +1,5 @@
+
+        <div *ngIf="isLoggedIn$ | async as isLoggedIn" class="logout float-right">
+                <a (click)="onLogout()" *ngIf="isLoggedIn">Logout</a>
+                <h4>{{currentUser.firstName}}</h4>
+        </div>

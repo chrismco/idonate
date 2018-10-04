@@ -1,0 +1,50 @@
+
+
+#login{
+    margin-top: 185px;
+}
+ .logo{
+    display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 63px;
+  background: url(../../img/logo.png);
+  background-repeat:no-repeat;
+  /* background-size: 100px 63px; */
+}
+
+form input{
+    color: #2d496f;
+    font-size:16px;
+    line-height: normal;
+    width:350px;
+    height:40px;
+    border: solid 1px #b6c0cd;
+    border-radius:3px;
+}
+
+form .form-group:first-child{
+    margin-bottom: 61px;
+}
+form .form-group label{
+    font-family: 'Open Sans', sans-serif;
+    color:#6d8cb6;
+    font-weight:600;
+    font-size:12px;
+}
+
+form button{
+    background-color: #6d8cb6;
+    padding: 14px 35px 14px 36px;
+    
+}
+
+form .login-register{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 35px;
+}
+
+.invalid-feedback{
+    color:red;
+}
+

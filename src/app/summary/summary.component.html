@@ -1,0 +1,60 @@
+<!-- <app-nav></app-nav> -->
+<div class="row">
+  <div class="col-md-6">
+    <h1>Dashboard <span>- Summary</span></h1>
+  </div>
+  <div class="col-md-6"></div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <article  id="tasks" class="section-block">
+        <div class="form-group">
+            <div class="row">
+              <div class="col-sm-8"> <h2>Action Items</h2></div>
+              <div class="col-sm-4">
+                <div id="completed-task">
+                    <span class="completed-task">Hide Completed <input checked type="checkbox" > <span class="checkmark"></span> </span> 
+                </div>
+               </div>
+            </div>
+            <form [formGroup]="form" (submit)="submit(form.value)">
+                <div class="" >
+                  <ul class="list-group checked-list-box" >
+                      <li class="list-group-item" data-style="button" *ngFor="let task of tasks.controls; let i=index">
+                      
+                          <input  [checked]="taskList.tasks[i].selected" type="checkbox" [formControl]="task"/>{{taskList.tasks[i].name + i}}
+                          <span class="checkmark"></span>
+                        </li>
+                  </ul>
+                </div>
+            </form>
+        </div>
+    </article>
+  </div>
+  <div class="col-md-6">
+    <article id="data" class="section-block">
+
+        <div class="row">
+            <div class="col-sm-12"> <h2>Metric Data</h2></div>
+          </div>
+          <div class="row stats">
+            <div class="col-md-6">
+              <span class="number">73</span>
+              <p>No. of pending calls</p>
+            </div>
+            <div class="col-md-6">
+                <span class="number">6</span>
+                <p>No. of pending calls</p>
+            </div>
+            <div class="col-md-6">
+                <span class="number">14</span>
+                <p>No. of pending calls</p>
+            </div>
+            <div class="col-md-6">
+                <span class="number">1248</span>
+                <p>No. of pending calls</p>
+            </div>
+          </div>
+    </article>
+  </div>
+</div>
